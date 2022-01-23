@@ -10,4 +10,5 @@ def test_presence_of_the_button_add_to_basket(browser):
     browser.get(link)
     checkbutton = browser.find_element(By.CSS_SELECTOR, ".btn.btn-lg.btn-primary.btn-add-to-basket")
     assert checkbutton is not None, "Element is not found"
+    time.sleep(5)
 
